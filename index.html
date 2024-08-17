@@ -43,6 +43,20 @@
             <li>Serve hot with rice or bread.</li>
         </ol>
     </main>
+    <script>
+        
+       function createParagraph() {
+        const para = document.createElement("p");
+        para.textContent = "You clicked the button!";
+        document.body.appendChild(para);
+      }
+      
+      const buttons = document.querySelectorAll("button");
+      
+      for (const button of buttons) {
+        button.addEventListener("click", createParagraph);
+      }
+    </script>  
     <footer>
         <p>&copy; 2024 Odin Recipes</p>
     </footer>
